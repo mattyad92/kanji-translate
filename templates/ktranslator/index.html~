@@ -1,0 +1,4 @@
+{{greeting}}
+{% for object in login %}
+{{object}}
+{% endfor %}

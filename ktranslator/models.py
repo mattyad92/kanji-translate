@@ -9,3 +9,6 @@ class Login(models.Model):
     last_name = models.CharField(max_length=20)
     user_name = models.CharField(max_length=20)
     email = models.EmailField (max_length=200)
+    
+    def get_absolute_url(self):
+        return "/ktranslator/%i" % self.id

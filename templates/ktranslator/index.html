@@ -1,5 +1,5 @@
 {{greeting}}
 
-{% for object in login %}
-{{object}}
-{% endfor %}
+<ul>{% for object in login %}
+<li><a href="{{object.get_absolute_url}}">{{object}}</a></li>
+{% endfor %}</ul>

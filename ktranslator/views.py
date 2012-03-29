@@ -8,7 +8,12 @@ def home(request):
     login = Login.objects.all()
     return render_to_response('ktranslator/index.html',{ 
         
-
-         'greeting':greeting,
+        'login' :login, 
+        'greeting':greeting,
     })
-
+def detail(request, note_id):
+       log = Login.objects.get(id=login_id)
+       return render_to_response('ktranslator/detail.html',{ 
+        
+        'log' :log, 
+    })

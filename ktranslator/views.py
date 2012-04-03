@@ -11,7 +11,7 @@ def home(request):
         'login' :login, 
         'greeting':greeting,
     })
-def detail(request, note_id):
+def detail(request, login_id):
        log = Login.objects.get(id=login_id)
        return render_to_response('ktranslator/detail.html',{ 
         

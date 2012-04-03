@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'kanjitranslate.ktranslator.views.home', name='home'),
-    url(r'^ktranslator/(?P<login_id>\d+)/$', 'kanjitranslate.ktranslator.views.detail'),
+    url(r'^login/(?P<login_id>\d+)/$', 'kanjitranslate.ktranslator.views.detail'),
     # url(r'^kanjitranslate/', include('kanjitranslate.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

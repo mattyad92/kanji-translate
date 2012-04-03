@@ -1,5 +1,9 @@
-{{greeting}}
+{% extends "ktranslator/base.html"%}
+{% block main %}
+
+<h1>{{greeting}}<h1>
 
 <ul>{% for object in login %}
 <li><a href="{{object.get_absolute_url}}">{{object}}</a></li>
 {% endfor %}</ul>
+{% endblock %}

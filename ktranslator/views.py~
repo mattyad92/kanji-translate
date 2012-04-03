@@ -12,7 +12,7 @@ def home(request):
         'greeting':greeting,
     })
 def detail(request, note_id):
-       log = Login.objects.get(id=note_id)
+       log = Login.objects.get(id=login_id)
        return render_to_response('ktranslator/detail.html',{ 
         
         'log' :log, 

@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: tesserwrap
+Version: 0.0.10
+Summary: Basic python bindings to the Tesseract C++ API
+Home-page: https://github.com/gregjurman/tesserwrap
+Author: Greg Jurman
+Author-email: gdj2214@rit.edu
+License: Apache License 2.0
+Description: Tesserwrap - Basic Tesseract API Wrapper for Python
+        
+        Tesserwrap is a project that allows simple bindings to Tesseract's API rather than executing the application manually each time.
+        
+Keywords: tesseract ocr cpp
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python

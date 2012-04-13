@@ -1,0 +1,11 @@
+MANIFEST.in
+README
+setup.cfg
+pip-egg-info/tesserwrap.egg-info/PKG-INFO
+pip-egg-info/tesserwrap.egg-info/SOURCES.txt
+pip-egg-info/tesserwrap.egg-info/dependency_links.txt
+pip-egg-info/tesserwrap.egg-info/top_level.txt
+tesserwrap/__init__.py
+tesserwrap/tesseract.py
+tesserwrap/cpp/tesseract_wrap.cpp
+tesserwrap/cpp/tesseract_wrap.h

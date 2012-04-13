@@ -1,7 +1,8 @@
-{% extends "base.html" %}
+{% extends "ktranslator/base.html" %}
 {% load url from future %}
 
 {% block main %}
+
 
 {% if form.errors %}
 <p>Your username and password didn't match. Please try again.</p>
@@ -9,7 +10,14 @@
 
 <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
 {% csrf_token %}
-<table>
+<table border="0" align="center">
+<tr>
+    <td colspan="2">
+<h3> Log in to get started!<h3>
+    </td>
+</tr>
+
+
 <tr>
     <td>{{ form.username.label_tag }}</td>
     <td>{{ form.username }}</td>
@@ -18,10 +26,20 @@
     <td>{{ form.password.label_tag }}</td>
     <td>{{ form.password }}</td>
 </tr>
+<tr>
+    <td colspan="2">
+          <h6>Or register an account!</h6>
+           <h9> Just click the link below. </h9>
+          <p><font size = "1"><a href="#">Register</a></font></p>
+       </div>
 </table>
 
+<div align="center">
 <input type="submit" value="login" />
 <input type="hidden" name="next" value="{{ next }}" />
+    </div>
 </form>
+
+
 
 {% endblock %}

@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 @login_required()
 def home(request):
     if request.user.is_authenticated():
-        greeting = "Logged in."
+        greeting = "You're logged in now."
 
     else:
         greeting = "Not logged in. =("
